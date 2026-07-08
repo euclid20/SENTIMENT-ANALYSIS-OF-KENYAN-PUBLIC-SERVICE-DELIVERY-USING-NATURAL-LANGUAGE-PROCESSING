@@ -1,0 +1,139 @@
+Term,Weight,Sector,Sentiment Class
+madere,-0.9,Transport,Negative
+kanjo,-0.8,Transport,Negative
+chocha,-0.5,Transport,Negative
+donda,-0.5,Transport,Negative
+mathree,0,Transport,Neutral
+matatu,0,Transport,Neutral
+nganya,0,Transport,Neutral
+manyanga,0.6,Transport,Positive
+foleni,-0.6,Transport,Negative
+jam,-0.7,Transport,Negative
+wamefunga njia,-0.9,Transport,Negative
+kufunga njia,-0.9,Transport,Negative
+shimo,-0.8,Transport,Negative
+pandisha fare,-0.8,Transport,Negative
+uendeshaji mbaya,-0.9,Transport,Negative
+mwendokasi,-0.5,Transport,Negative
+dere,0,Transport,Neutral
+gari,0,Transport,Neutral
+barabara,0,Transport,Neutral
+ajali,-1,Transport,Negative
+kiti,0,Transport,Neutral
+fare,0,Transport,Neutral
+dundika,0.6,Transport,Positive
+traffic,-0.4,Transport,Negative
+polisi,-0.5,Transport,Negative
+hongo,-1,General,Negative
+rushwa,-1,General,Negative
+daktari,0,Health,Neutral
+doc,0,Health,Neutral
+nesi,0,Health,Neutral
+nurse,0,Health,Neutral
+dawa,0,Health,Neutral
+dawa hakuna,-0.9,Health,Negative
+hakuna dawa,-0.9,Health,Negative
+uzembe,-0.9,Health,Negative
+matibabu poa,0.8,Health,Positive
+wodi,0,Health,Neutral
+mgonjwa,0,Health,Neutral
+hospitali,0,Health,Neutral
+kliniki,0,Health,Neutral
+panga line,-0.6,General,Negative
+dharura,0,Health,Neutral
+kifo,-1,Health,Negative
+kuumia,-0.7,Health,Negative
+matibabu ya bure,0.7,Health,Positive
+rufaa,0,Health,Neutral
+huduma ya kwanza,0.5,Health,Positive
+kuchajiwa ghali,-0.8,Health,Negative
+vipimo,0,Health,Neutral
+kupona,0.8,Health,Positive
+mgonjwa mahututi,-0.5,Health,Negative
+NHIF,0,Health,Neutral
+SHA,0,Health,Neutral
+huduma bora,0.9,General,Positive
+huduma mbaya,-0.9,General,Negative
+mwalimu,0,Education,Neutral
+ticha,0,Education,Neutral
+shule,0,Education,Neutral
+chuo,0,Education,Neutral
+karo,0,Education,Neutral
+mgomo,-0.9,Education,Negative
+mwakenya,-0.8,Education,Negative
+toboa,0.8,General,Positive
+nimetoboa,0.8,General,Positive
+ametoboa,0.8,General,Positive
+kutoboa,0.8,General,Positive
+walitoboa,0.8,General,Positive
+kufeli,-0.8,Education,Negative
+sup,-0.8,Education,Negative
+supplementary,-0.8,Education,Negative
+mtihani,0,Education,Neutral
+darasa,0,Education,Neutral
+masomo,0,Education,Neutral
+vitabu,0,Education,Neutral
+masomo poa,0.7,Education,Positive
+walimu wema,0.8,Education,Positive
+kufukuzwa karo,-0.8,Education,Negative
+kusimamishwa masomo,-0.8,Education,Negative
+masomo ya bure,0.8,Education,Positive
+udanganyifu,-0.8,Education,Negative
+mtaala,0,Education,Neutral
+kuhitimu,0.9,Education,Positive
+kupita mtihani,0.8,Education,Positive
+kufeli mtihani,-0.8,Education,Negative
+terrible,-0.9,General,Negative
+awful,-0.9,General,Negative
+worst,-1,General,Negative
+bad,-0.7,General,Negative
+delayed,-0.7,General,Negative
+delayed response,-0.7,General,Negative
+fantastic,0.9,General,Positive
+excellent,0.9,General,Positive
+amazing,0.9,General,Positive
+good,0.6,General,Positive
+nice,0.6,General,Positive
+love,0.8,General,Positive
+hate,-0.8,General,Negative
+poor,-0.7,General,Negative
+slow,-0.6,General,Negative
+fast,0.7,General,Positive
+asante,0.9,General,Positive
+shukran,0.9,General,Positive
+sawa,0.5,General,Positive
+bomba,0.9,General,Positive
+noma,-0.7,General,Negative
+mzuka,0.8,General,Positive
+rada,0.5,General,Positive
+kiwaru,-0.6,General,Negative
+risto,0,General,Neutral
+vako,-0.7,General,Negative
+uduu,0.6,General,Positive
+salama,0.7,General,Positive
+huduma,0,General,Neutral
+uongo,-0.8,General,Negative
+ukweli,0.5,General,Positive
+fika,0,General,Neutral
+chafu,-0.7,General,Negative
+safi,0.7,General,Positive
+kuvumilia,0.3,General,Positive
+upotezaji wa wakati,-0.8,General,Negative
+ngori,-0.7,General,Negative
+anaboo,-0.5,General,Negative
+wanaboo,-0.5,General,Negative
+haskii,-0.5,General,Negative
+hawaskii,-0.5,General,Negative
+Ruto must go,-0.7,General,Negative
+Kasongo,-0.4,General,Negative
+mbona,-0.2,General,Negative
+choka,-0.3,General,Negative
+wizi,-0.6,General,Negative
+iba,-0.6,General,Negative
+funga,-0.5,General,Negative
+imarika,0.6,General,Positive
+imepanda,-0.4,Transport,Negative
+choma,-0.6,Education,Negative
+wezi,-0.6,General,Negative
+lakini mbona,-0.3,General,Negative
+sioni,-0.2,General,Negative

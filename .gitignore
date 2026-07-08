@@ -1,0 +1,17 @@
+# Ignore heavy BERT model weights
+transport_bert_backup/
+education_bert_backup/
+healthcare_bert_backup/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore environment variables (Just in case you add secrets later)
+.env
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
