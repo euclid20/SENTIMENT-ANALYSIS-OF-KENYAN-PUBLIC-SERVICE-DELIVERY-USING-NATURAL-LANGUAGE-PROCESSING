@@ -1,0 +1,16 @@
+# Web Application
+streamlit==1.36.0
+
+# Deep Learning & NLP
+torch
+transformers
+
+# Data Manipulation
+pandas
+numpy
+
+# Machine Learning (For your baseline scripts like Naive Bayes/SVM)
+scikit-learn
+
+# Jupyter for Notebooks
+notebook
