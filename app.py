@@ -24,18 +24,19 @@ def load_lexicon_csv(filepath="lexicon.csv"):
 
 sector = st.selectbox("Select Public Service Sector:", ("Transport", "Education", "Healthcare"))
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model_paths = {
-    "Transport": os.path.join(BASE_DIR, "transport_bert_backup"),
-    "Education": os.path.join(BASE_DIR, "education_bert_backup"),
-    "Healthcare": os.path.join(BASE_DIR, "healthcare_bert_backup")
+REPO_ID = "euclid20/kenyan-sentiment-bert"
+
+model_subfolders = {
+    "Transport": "transport_bert_backup",
+    "Education": "education_bert_backup",
+    "Healthcare": "healthcare_bert_backup"
 }
 
 @st.cache_resource
 def load_expert_model(sector_choice):
-    path = model_paths[sector_choice]
-    tokenizer = AutoTokenizer.from_pretrained(path)
-    model = AutoModelForSequenceClassification.from_pretrained(path)
+    folder_name = model_subfolders[sector_choice]
+    tokenizer = AutoTokenizer.from_pretrained(REPO_ID, subfolder=folder_name)
+    model = AutoModelForSequenceClassification.from_pretrained(REPO_ID, subfolder=folder_name)
     return tokenizer, model
 
 tokenizer, model = load_expert_model(sector)
