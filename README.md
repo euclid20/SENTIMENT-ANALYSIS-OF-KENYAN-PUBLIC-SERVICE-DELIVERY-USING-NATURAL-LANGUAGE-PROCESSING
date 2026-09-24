@@ -7,12 +7,14 @@ This repository documents the entire data lifecycle of the project:
 * **Data Extraction:** Automated pagination loops to scrape raw citizen grievances from Twitter/X.
 * **Data Preprocessing:** Cleaning, tokenization, and auto-labeling pipelines.
 * **Model Training:** Baseline benchmarking (SVM, Naive Bayes) against fine-tuned Transformer models (BERT).
+* **Model Hosting (Hugging Face):** Heavy model weights (.safetensors) are hosted externally on the Hugging Face Hub to bypass GitHub size limits. The application dynamically fetches them via the transformers API.
 * **Deployment:** A Streamlit web application utilizing `@st.cache_data` for high-speed lexicon lookups and dynamic sentiment overriding.
 
 ## ✨ Key Features
 * **Dialect Awareness:** Seamlessly handles code-switching between English, Swahili, and Sheng.
 * **Sector Contextualization:** Differentiates slang meanings based on the selected sector (Transport, Healthcare, Education).
 * **Zero-Retraining Scalability:** The system's vocabulary can be expanded infinitely by updating a local CSV, requiring zero GPU retraining of the core BERT model.
+* **Cloud Weight Caching:** Automatically downloads and caches the massive Hugging Face models locally on the first run, keeping this Git repository exceptionally lightweight.
 
 ## 📂 Repository Structure
 * `1_Data_Extraction/`: Web scraping scripts and raw merged datasets.
@@ -20,10 +22,14 @@ This repository documents the entire data lifecycle of the project:
 * `3_Model_Training/`: Google Colab training scripts for the HuggingFace models.
 * `app.py`: The core Streamlit application.
 * `lexicon.csv`: The dynamic Swahili/Sheng dictionary containing sentiment weights.
+* (Note: The heavy `transport_bert_backup`, `education_bert_backup`, and `healthcare_bert_backup` folders are explicitly excluded from this repository via .gitignore and are hosted on Hugging Face).
 
 ## ⚙️ Quick Start
 ```bash
 git clone [https://github.com/YOUR_USERNAME/SENTIMENT-ANALYSIS-OF-KENYAN-PUBLIC-SERVICE-DELIVERY-USING-NATURAL-LANGUAGE-PROCESSING.git](https://github.com/YOUR_USERNAME/SENTIMENT-ANALYSIS-OF-KENYAN-PUBLIC-SERVICE-DELIVERY-USING-NATURAL-LANGUAGE-PROCESSING.git)
 cd SENTIMENT-ANALYSIS-OF-KENYAN-PUBLIC-SERVICE-DELIVERY-USING-NATURAL-LANGUAGE-PROCESSING
+
 pip install -r requirements.txt
+
 streamlit run app.py
+⚠️ Important First-Run Note: The first time you select a sector in the dashboard, the application will pause to download the corresponding fine-tuned BERT model from Hugging Face (~417 MB) to your local machine cache. An active internet connection is required for this initial step. Once cached, subsequent runs will load instantly offline.
