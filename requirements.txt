@@ -1,5 +1,5 @@
 # Web Application
-streamlit==1.36.0
+streamlit
 
 # Deep Learning & NLP
 torch
