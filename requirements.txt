@@ -1,7 +1,8 @@
 # Web Application
 streamlit
 
-# Deep Learning & NLP
+# Deep Learning & NLP (Forces the lightweight, CPU-only PyTorch wheel)
+--extra-index-url https://download.pytorch.org/whl/cpu
 torch
 transformers
 
@@ -9,8 +10,5 @@ transformers
 pandas
 numpy
 
-# Machine Learning (For your baseline scripts like Naive Bayes/SVM)
+# Machine Learning 
 scikit-learn
-
-# Jupyter for Notebooks
-notebook
